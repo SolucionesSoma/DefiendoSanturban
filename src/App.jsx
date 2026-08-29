@@ -16,6 +16,7 @@ import BarraAccion from './components/BarraAccion';
 import { Ondas, Pasto, Bosque } from './components/Silueta';
 import { REVOCATORIA } from './lib/config';
 import { diasDesde } from './lib/utils';
+import { Analytics } from '@vercel/analytics/react';
 
 const VERDE = '#0F3D2E';
 const AGUA = '#159FD8';
@@ -31,6 +32,7 @@ export default function App() {
 
   return (
     <div className="font-body">
+      <Analytics />
       <Encabezado />
       <Hero dias={dias} />
 
