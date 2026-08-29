@@ -10,6 +10,7 @@ test('Hero muestra foto completa en bloque móvil independiente', async () => {
   assert.doesNotMatch(hero, /md:hidden h-\[56vw\]/);
   assert.match(hero, /block sm:inline/);
   assert.match(hero, /flex flex-col sm:flex-row/);
+  assert.match(hero, /Santurbán\.<\/span>/);
 });
 
 test('La evidencia no fuerza desplazamiento horizontal en móvil', async () => {

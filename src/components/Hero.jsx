@@ -28,7 +28,7 @@ export default function Hero({ dias }) {
               Comité por el Agua y el Páramo · Campaña ciudadana
             </p>
             <h1 className={'font-display font-extrabold text-[clamp(32px,10vw,64px)] sm:text-[clamp(38px,7vw,64px)] leading-[1.06] tracking-tight mb-5 ' + shadow}>
-              #Defiendo<span className="block sm:inline text-agua-claro">Santurbán</span>.<br className="hidden sm:block" />
+              #Defiendo<span className="block sm:inline text-agua-claro">Santurbán.</span><br className="hidden sm:block" />
             </h1>
             <p className="font-serif text-[clamp(19px,2.6vw,25px)] text-white/90 leading-snug mb-7 max-w-[30ch]">
               En Santurbán nace el agua de más de dos millones de personas. El Ministerio
