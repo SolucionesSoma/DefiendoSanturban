@@ -25,7 +25,7 @@ export default function Hero({ dias }) {
         <div className="grid lg:grid-cols-[1.35fr,minmax(280px,360px)] gap-10 lg:gap-16 lg:items-center">
           <div>
             <p className="font-display font-semibold text-[11px] tracking-[.22em] uppercase text-agua-claro mb-5">
-              Comité por el Agua y el Páramo · Campaña ciudadana
+              Comité por el Agua y el Páramo de Santurbán · Campaña ciudadana
             </p>
             <h1 className={'font-display font-extrabold text-[clamp(32px,10vw,64px)] sm:text-[clamp(38px,7vw,64px)] leading-[1.06] tracking-tight mb-5 ' + shadow}>
               #Defiendo<span className="block sm:inline text-agua-claro">Santurbán.</span><br className="hidden sm:block" />

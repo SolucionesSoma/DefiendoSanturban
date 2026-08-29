@@ -18,7 +18,7 @@ export default function SeccionPorque() {
             <Eyebrow sobre="Por qué actuar">Una reserva que <b>duró siete días</b></Eyebrow>
           </Reveal>
           <Reveal as="p" className="text-[15px] text-white/80 leading-relaxed md:text-right md:max-w-[40ch] md:justify-self-end">
-            El Comité exige que vuelva la reserva definitiva de la Baja en santurban.
+            El Comité exige que vuelva la reserva definitiva de la Baja en Santurbán.
           </Reveal>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
