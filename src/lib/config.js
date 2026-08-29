@@ -22,13 +22,13 @@ export const ARCHIVOS = {
 };
 
 export const EVENTOS = [
-  { y:2026, m:9,  d:2,  t:'Asamblea general del Comité',
-    q:'Se deciden las fechas y la forma de las movilizaciones. Quien es defensor tiene voz y voto.',
+  { y:2026, m:9,  d:9,  t:'Asamblea general del Comité',
+    q:'Se deciden las fechas y la forma de las movilizaciones. Quien es defensor tiene voz y voto. 6 P.M. calle 33 # 23 - 37 Bmanga.',
     lugar:'Bucaramanga' },
-  { y:2026, m:9,  d:3,  t:'Anuncio público y lanzamiento de la campaña',
-    q:'Se hacen públicas las fechas de movilización y arranca la difusión abierta del Kit.',
+  { y:2026, m:9,  d:10,  t:'Anuncio público y lanzamiento de la campaña',
+    q:'Se hacen públicas las fechas de movilización y arranca la difusión abierta del Kit por Santurbán.',
     lugar:'Bucaramanga' },
   { y:2026, m:10, d:13, t:'Vence el plazo para reabrir la consulta',
-    q:'Dos meses desde la revocatoria. Es la fecha que los escritos le fijan al Ministerio.',
+    q:'Dos meses desde la revocatoria. Es la fecha que nuestra petición le fija al Ministerio.',
     lugar:'' },
 ];

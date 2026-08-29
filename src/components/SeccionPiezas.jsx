@@ -218,9 +218,9 @@ export default function SeccionPiezas({ dias }) {
       <div className="tarjeta p-5 md:p-6 mt-4">
         <h3 className="font-display font-bold text-[17px] mb-1.5">El volante y el mensaje</h3>
         <p className="text-[var(--texto-suave)] text-[14.5px] mb-3">Imprima el volante para la tienda, la junta o la universidad, y reenvíe el mensaje al grupo de la familia o del trabajo. Los dos salen con el número de días de hoy.</p>
-        <div className="rounded-2xl bg-[var(--pagina)] border-l-[3px] border-l-agua px-4 py-3 mb-4 flex gap-3 items-start">
-          <p className="flex-1 text-[14px] leading-relaxed">{mensaje}</p>
-          <button onClick={() => copiar(mensaje, 'msg')} className="shrink-0 rounded-full border border-[var(--linea)] text-[11.5px] font-display font-semibold px-3 py-1 hover:border-hoja hover:text-hoja transition-colors">{copiadoId === 'msg' ? 'Copiado ✓' : 'Copiar'}</button>
+        <div className="rounded-2xl bg-[var(--pagina)] border-l-[3px] border-l-agua px-4 py-3 mb-4 flex flex-col sm:flex-row gap-3 items-start">
+          <p className="flex-1 min-w-0 break-words text-[14px] leading-relaxed">{mensaje}</p>
+          <button onClick={() => copiar(mensaje, 'msg')} className="self-start sm:self-auto shrink-0 rounded-full border border-[var(--linea)] text-[11.5px] font-display font-semibold px-3 py-1 hover:border-hoja hover:text-hoja transition-colors">{copiadoId === 'msg' ? 'Copiado ✓' : 'Copiar'}</button>
         </div>
         <button onClick={imprimirVolante} className="btn btn-amber btn-sm">
           <Ico d={P.imprimir} className="w-4 h-4" /> Imprimir el volante
