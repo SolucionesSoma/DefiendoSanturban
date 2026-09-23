@@ -6,7 +6,7 @@ export default function SeccionCifras({ dias }) {
   const items = [
     [P.calendario, String(dias), 'días sin protección'],
     [P.hoja, '1.499', 'hectáreas de reserva'],
-    [P.balanza, '13 OCT', 'fecha límite 2026'],
+    [P.balanza, '13 NOV', 'fecha límite 2026'],
     [P.alerta, '15', 'días hábiles de plazo'],
     [P.gota, '2M+', 'personas abastecidas'],
   ];

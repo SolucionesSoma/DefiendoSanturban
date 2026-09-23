@@ -50,7 +50,7 @@ export default function Hero({ dias }) {
               <div className="text-[11px] tracking-[.14em] uppercase text-white/70 mt-1.5">personas beben esta agua</div>
             </div>
             <div className="pt-4">
-              <div className="font-display font-extrabold text-[22px] leading-none text-agua-claro">13 OCT 2026</div>
+              <div className="font-display font-extrabold text-[22px] leading-none text-agua-claro">13 NOV 2026</div>
               <div className="text-[11px] tracking-[.12em] uppercase text-white/70 mt-1.5">fecha límite para reabrir la consulta</div>
             </div>
           </div>

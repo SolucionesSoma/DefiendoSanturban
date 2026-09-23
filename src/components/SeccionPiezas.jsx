@@ -106,7 +106,7 @@ export default function SeccionPiezas({ dias }) {
     ctx.fillText('DÍAS SIN LA PROTECCIÓN', 110 + wN, 348);
     ctx.fillText('QUE SANTURBÁN YA TENÍA', 110 + wN, 388);
     ctx.fillStyle = 'rgba(255,255,255,.8)'; ctx.font = '400 26px "Public Sans", sans-serif';
-    ctx.fillText('Exigimos reabrir la consulta pública antes del 13 de octubre de 2026.', 74, 486);
+    ctx.fillText('Exigimos reabrir la consulta pública antes del 13 de noviembre de 2026.', 74, 486);
   }
 
   function pintarMarco() {

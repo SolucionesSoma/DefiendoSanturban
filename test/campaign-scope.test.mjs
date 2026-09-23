@@ -20,7 +20,14 @@ test('la campaña publica únicamente el derecho de petición', async () => {
 
 test('el ultimátum vence el 13 de noviembre de 2026', async () => {
   const config = await leer('src/lib/config.js');
+  const hero = await leer('src/components/Hero.jsx');
+  const cifras = await leer('src/components/SeccionCifras.jsx');
+  const piezas = await leer('src/components/SeccionPiezas.jsx');
 
   assert.match(config, /y:2026, m:11, d:13/);
   assert.match(config, /Tres meses desde la revocatoria/);
+  assert.match(hero, /13 NOV 2026/);
+  assert.match(cifras, /13 NOV/);
+  assert.match(piezas, /13 de noviembre de 2026/);
+  assert.doesNotMatch(hero + cifras + piezas, /13 (?:OCT|de octubre)/i);
 });
