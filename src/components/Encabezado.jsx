@@ -4,7 +4,7 @@ import { Ico, P } from './Iconos';
 export default function Encabezado() {
   const [abierto, setAbierto] = useState(false);
   const enlaces = [
-    ['#unirse', 'Únase'], ['#acciones', 'Acciones'], ['#piezas', 'Difunda'],
+    ['#unirse', 'Únase'], ['#acciones', 'Petición'],
     ['#evidencia', 'La evidencia'], ['#fechas', 'Fechas'],
   ];
   return (

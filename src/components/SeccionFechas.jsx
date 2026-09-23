@@ -22,7 +22,7 @@ export default function SeccionFechas() {
     <section id="fechas" className="max-w-6xl mx-auto px-5 sm:px-8 py-16 md:py-24">
       <div className="grid md:grid-cols-[1fr,auto] gap-x-10 gap-y-4 md:items-end mb-10 md:mb-14">
         <Reveal>
-          <span className="block font-display font-extrabold text-[clamp(38px,7vw,64px)] leading-none text-hoja/25 mb-1">05</span>
+          <span className="block font-display font-extrabold text-[clamp(38px,7vw,64px)] leading-none text-hoja/25 mb-1">04</span>
           <Eyebrow sobre="Calendario por Santurbán">Las fechas, <b>en su bolsillo</b></Eyebrow>
         </Reveal>
         <Reveal as="p" className="text-[15px] text-[var(--texto-suave)] leading-relaxed md:text-right md:max-w-[40ch] md:justify-self-end">

@@ -4,10 +4,7 @@ import Hero from './components/Hero';
 import SeccionPorque from './components/SeccionPorque';
 import SeccionCifras from './components/SeccionCifras';
 import SeccionUnirse from './components/SeccionUnirse';
-import SeccionManifiesto from './components/SeccionManifiesto';
-import SeccionGaleria from './components/SeccionGaleria';
 import SeccionAcciones from './components/SeccionAcciones';
-import SeccionPiezas from './components/SeccionPiezas';
 import SeccionEvidencia from './components/SeccionEvidencia';
 import SeccionFechas from './components/SeccionFechas';
 import SeccionContacto from './components/SeccionContacto';
@@ -46,9 +43,7 @@ export default function App() {
      
       <Bosque arriba={VERDE} abajo={CREMA} />
 
-      <SeccionGaleria />
       <SeccionAcciones />
-      <SeccionPiezas dias={dias} />
 
       <Ondas arriba={CREMA} abajo={AGUA} />
       <SeccionEvidencia />

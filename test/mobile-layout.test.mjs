@@ -19,11 +19,3 @@ test('La evidencia no fuerza desplazamiento horizontal en móvil', async () => {
   assert.match(evidencia, /#evidencia \.overflow-x-auto img/);
   assert.match(evidencia, /min-width: 0/);
 });
-
-test('mensaje del volante apila boton y permite encoger texto en movil', async () => {
-  const piezas = await leer('src/components/SeccionPiezas.jsx');
-
-  assert.match(piezas, /flex flex-col sm:flex-row/);
-  assert.match(piezas, /flex-1 min-w-0 break-words/);
-  assert.match(piezas, /self-start sm:self-auto/);
-});

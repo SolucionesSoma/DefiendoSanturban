@@ -6,10 +6,10 @@ import { bajarUrl, useCopiar } from '../lib/utils';
 
 const ACCIONES = [
   {
-    n: 1, titulo: 'Derecho de petición al Ministerio de Ambiente',
+    titulo: 'Derecho de petición al Ministerio de Ambiente',
     sub: 'Desde el primer día. Es el que radica todo el mundo.',
     pasos: [
-      ['Llene los corchetes y bórrelos.', 'Nombre, cédula, ciudad, fecha, correo y teléfono.'],
+      ['Llene sus datos:', 'firma, nombre, cédula y correo.'],
       ['Firme y guárdelo en PDF.', 'Adjunte la foto de su cédula por ambas caras.'],
       ['Envíe el correo', 'con el PDF, copiando los campos de abajo.'],
       ['Guarde el radicado', 'y cuente quince días hábiles para recibir una respuesta de fondo.'],
@@ -59,7 +59,6 @@ function Accion({ a, idx }) {
   return (
     <details className="acc tarjeta border-t-[3px] border-t-hoja mb-4 overflow-hidden" open={open} onToggle={e => setOpen(e.target.open)}>
       <summary className="flex items-start gap-4 p-5 md:p-6">
-        <span className="font-display font-extrabold text-[clamp(28px,5vw,44px)] leading-none text-hoja/30 shrink-0">{String(a.n).padStart(2, '0')}</span>
         <span className="flex-1 min-w-0 pt-1">
           <b className="block font-display font-bold text-[16.5px] leading-snug">{a.titulo}</b>
           <em className="block not-italic text-[13px] text-[var(--texto-suave)] mt-0.5">{a.sub}</em>
@@ -101,7 +100,7 @@ export default function SeccionAcciones() {
           Descargue el formato, fírmelo y envíelo por correo. Desde que llega, corre un plazo legal de quince días hábiles.
         </Reveal>
       </div>
-      {ACCIONES.map((a, i) => <Accion key={a.n} a={a} idx={i} />)}
+      {ACCIONES.map((a, i) => <Accion key={a.titulo} a={a} idx={i} />)}
       <p className="text-[14px] text-[var(--texto-suave)] leading-relaxed mt-6"><b className="text-[var(--texto)]">El agua no tiene color político.</b> Los escritos van en tono ponderado y sin reproche a nadie, para que los pueda firmar quien apoya al Gobierno y quien no. El formato es suyo: lo firma usted, en nombre propio y en la defensa de Santurbán. Léalo antes de enviarlo.</p>
     </section>
   );

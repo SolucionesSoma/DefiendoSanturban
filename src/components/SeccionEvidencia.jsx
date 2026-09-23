@@ -18,7 +18,7 @@ export default function SeccionEvidencia() {
       <div className="max-w-6xl mx-auto px-5 sm:px-8 py-16 md:py-24">
         <div className="grid md:grid-cols-[1fr,auto] gap-x-10 gap-y-4 md:items-end mb-10 md:mb-12">
           <Reveal>
-            <span className="block font-display font-extrabold text-[clamp(38px,7vw,64px)] leading-none text-white/25 mb-1">04</span>
+            <span className="block font-display font-extrabold text-[clamp(38px,7vw,64px)] leading-none text-white/25 mb-1">03</span>
             <Eyebrow sobre="La evidencia">El agua del páramo y la mina, <b>el mismo ADN</b></Eyebrow>
           </Reveal>
           <Reveal as="p" className="text-[15px] text-white/80 leading-relaxed md:text-right md:max-w-[44ch] md:justify-self-end">
@@ -35,12 +35,21 @@ export default function SeccionEvidencia() {
           <figcaption className="text-[12.5px] text-white/60 leading-relaxed mt-4 max-w-[70ch]">Esquema del Comité sobre el estudio de isótopos estables del Servicio Geológico Colombiano, recogido en el Documento Técnico de Soporte del Ministerio de Ambiente.</figcaption>
         </Reveal>
 
-        <Reveal className="tarjeta text-[var(--texto)] p-6 md:p-7 mb-12">
-          <h3 className="font-display font-bold text-[19px] mb-1.5">Toda la información técnica, en un solo lugar</h3>
-          <p className="text-[var(--texto-suave)] text-[15px] mb-4 max-w-[54ch]">Las resoluciones, el fallo de tutela, los estudios y los documentos del expediente, organizados por el Comité en una carpeta abierta.</p>
-          <a href={ENLACES.informacion} target="_blank" rel="noopener" className="btn btn-amber btn-sm">
-            <Ico d={P.externo} className="w-4 h-4" /> Abrir el archivo del expediente
-          </a>
+        <Reveal className="relative overflow-hidden rounded-2xl border border-white/20 bg-bosque-hondo text-white p-6 md:p-8 mb-12 shadow-[0_18px_48px_rgba(7,30,22,.22)]">
+          <div className="absolute inset-y-0 left-0 w-1.5 bg-ambar" aria-hidden="true" />
+          <div className="grid md:grid-cols-[auto,1fr,auto] gap-5 md:gap-7 items-center">
+            <span className="w-14 h-14 rounded-xl bg-white/10 border border-white/15 text-agua-claro grid place-items-center">
+              <Ico d={P.externo} className="w-6 h-6" />
+            </span>
+            <div>
+              <span className="block font-display text-[10px] font-bold tracking-[.16em] uppercase text-agua-claro mb-2">Expediente técnico abierto</span>
+              <h3 className="font-display font-bold text-[22px] leading-tight mb-2">Toda la información técnica, en un solo lugar</h3>
+              <p className="text-white/72 text-[15px] leading-relaxed max-w-[62ch]">Resoluciones, estudios, cartografía y documentos del expediente, organizados por el Comité para consulta pública.</p>
+            </div>
+            <a href={ENLACES.informacion} target="_blank" rel="noopener" className="btn btn-amber btn-sm whitespace-nowrap">
+              Abrir expediente <Ico d={P.externo} className="w-4 h-4" />
+            </a>
+          </div>
         </Reveal>
 
         <Reveal>

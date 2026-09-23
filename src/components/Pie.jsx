@@ -1,7 +1,7 @@
 import { CORREO } from '../lib/config';
 
 const SECCIONES = [
-  ['#unirse', 'Únase'], ['#acciones', 'Derecho de petición'], ['#piezas', 'Difunda'],
+  ['#unirse', 'Únase'], ['#acciones', 'Derecho de petición'],
   ['#evidencia', 'La evidencia'], ['#fechas', 'Fechas'],
 ];
 

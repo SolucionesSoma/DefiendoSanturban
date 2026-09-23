@@ -2,7 +2,7 @@
    CONFIGURACIÓN — lo único que hay que tocar para poner la campaña en marcha
    ========================================================================= */
 export const ENLACES = {
-  whatsapp: '',    // enlace de invitación del grupo o comunidad de WhatsApp
+  whatsapp: 'https://chat.whatsapp.com/HWULWPZQOLkK63bbyKIyl2',
   telegram: '',    // enlace del canal de Telegram
   banco: '',       // enlace del banco de imágenes de la campaña
   informacion: 'https://drive.google.com/drive/folders/1LodtBPH3Pp_NtUB3sS9GUNGR0NDtOq7N?usp=drive_link',
@@ -18,12 +18,15 @@ export const ARCHIVOS = {
 };
 
 export const EVENTOS = [
-  { y:2026, m:9,  d:9,  t:'Asamblea general del Comité',
+  { y:2026, m:9,  d:23, t:'Asamblea general del Comité',
     q:'Se deciden las fechas y la forma de las movilizaciones. Quien es defensor tiene voz y voto. 6 P.M. calle 33 # 23 - 37 Bmanga.',
     lugar:'Bucaramanga' },
-  { y:2026, m:9,  d:10,  t:'Anuncio público y lanzamiento de la campaña',
-    q:'Se hacen públicas las fechas de movilización y arranca la difusión abierta del Kit por Santurbán.',
+  { y:2026, m:9,  d:24, t:'Anuncio público y lanzamiento de la campaña #DefiendoSanturban',
+    q:'Se hacen públicas las fechas de movilización y arranca la difusión abierta de #DefiendoSanturban.',
     lugar:'Bucaramanga' },
+  { y:2026, m:10, d:13, t:'Movilización digital',
+    q:'Con tu cuenta de X promueve el #DefiendoSanturban y ayuda a que más personas conozcan la campaña.',
+    lugar:'En X' },
   { y:2026, m:11, d:13, t:'Vence el plazo para reabrir la consulta',
     q:'Tres meses desde la revocatoria. Es la fecha que nuestra petición le fija al Ministerio.',
     lugar:'' },
