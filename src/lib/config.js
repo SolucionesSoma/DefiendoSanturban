@@ -13,12 +13,8 @@ export const CORREO = 'comiteparamosanturban@gmail.com';
 export const REVOCATORIA = new Date(2026, 7, 13); // 13 de agosto de 2026
 
 export const ARCHIVOS = {
-  peticion:     '/documentos/1-derecho-de-peticion-minambiente.docx',
-  procuraduria: '/documentos/2-accion-preventiva-procuraduria.docx',
-  tutela:       '/documentos/3-accion-de-tutela.docx',
-  inst1:        '/documentos/instructivo-1-peticion-minambiente.pdf',
-  inst2:        '/documentos/instructivo-2-procuraduria.pdf',
-  inst3:        '/documentos/instructivo-3-tutela.pdf',
+  peticion: '/documentos/1-derecho-de-peticion-minambiente.docx',
+  inst1: '/documentos/instructivo-1-peticion-minambiente.pdf',
 };
 
 export const EVENTOS = [
@@ -28,7 +24,7 @@ export const EVENTOS = [
   { y:2026, m:9,  d:10,  t:'Anuncio público y lanzamiento de la campaña',
     q:'Se hacen públicas las fechas de movilización y arranca la difusión abierta del Kit por Santurbán.',
     lugar:'Bucaramanga' },
-  { y:2026, m:10, d:13, t:'Vence el plazo para reabrir la consulta',
-    q:'Dos meses desde la revocatoria. Es la fecha que nuestra petición le fija al Ministerio.',
+  { y:2026, m:11, d:13, t:'Vence el plazo para reabrir la consulta',
+    q:'Tres meses desde la revocatoria. Es la fecha que nuestra petición le fija al Ministerio.',
     lugar:'' },
 ];

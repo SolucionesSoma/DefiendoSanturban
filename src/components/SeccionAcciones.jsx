@@ -12,39 +12,13 @@ const ACCIONES = [
       ['Llene los corchetes y bórrelos.', 'Nombre, cédula, ciudad, fecha, correo y teléfono.'],
       ['Firme y guárdelo en PDF.', 'Adjunte la foto de su cédula por ambas caras.'],
       ['Envíe el correo', 'con el PDF, copiando los campos de abajo.'],
-      ['Guarde el radicado', 'y cuente quince días hábiles. Sin respuesta de fondo, use la tutela.'],
+      ['Guarde el radicado', 'y cuente quince días hábiles para recibir una respuesta de fondo.'],
     ],
     para: 'info@minambiente.gov.co',
     asunto: 'Derecho de petición en interés general. Reapertura de la consulta pública. Reserva La Baja, macizo Occidental de Santurbán',
     cuerpo: 'Buen día. Adjunto derecho de petición en interés general dirigido al Ministerio de Ambiente y Desarrollo Sostenible, relacionado con la reapertura de la etapa de consulta pública del proyecto de reserva definitiva La Baja, en el macizo Occidental de Santurbán. Agradezco confirmar el número de radicado a este mismo correo.',
     botones: [['peticion', 'Formato en Word'], ['inst1', 'Instructivo (PDF)']],
     abierto: true,
-  },
-  {
-    n: 2, titulo: 'Acción preventiva ante la Procuraduría',
-    sub: 'El mismo día. Pone a un órgano de control a vigilar el expediente.',
-    pasos: [
-      ['Llene los corchetes, firme y guarde en PDF.', ''],
-      ['Adjunte su petición al Ministerio', 'con la constancia de envío, si ya la radicó.'],
-      ['Envíe el correo', 'pidiendo que se dirija a la Delegada para Asuntos Ambientales y Agrarios.'],
-    ],
-    para: 'quejas@procuraduria.gov.co',
-    asunto: 'Solicitud de función preventiva. Omisión del Ministerio de Ambiente. Reserva La Baja, macizo Occidental de Santurbán',
-    cuerpo: 'Buen día. Adjunto solicitud de ejercicio de la función preventiva y de control de gestión frente a la omisión del Ministerio de Ambiente y Desarrollo Sostenible en la conclusión de la actuación administrativa retrotraída por la Resolución 1037 de 2026. Solicito que se dirija a la Procuraduría Delegada para Asuntos Ambientales y Agrarios y que se me informe el número de radicado a este mismo correo.',
-    botones: [['procuraduria', 'Formato en Word'], ['inst2', 'Instructivo (PDF)']],
-  },
-  {
-    n: 3, titulo: 'Acción de tutela, si no contestan',
-    sub: 'Cuando venzan los quince días hábiles, o si la respuesta no resuelve.',
-    pasos: [
-      ['Escoja el hecho tercero:', 'el formato trae una versión para el silencio y otra para la respuesta que no resuelve. Borre la que no aplique.'],
-      ['Anexe la petición y su constancia de envío.', 'Sin esos dos anexos la tutela se cae.'],
-      ['Envíela por correo o en la oficina de reparto.', 'No se necesita abogado. El juez falla en diez días.'],
-    ],
-    para: 'soportetutelaenlinea@deaj.ramajudicial.gov.co',
-    asunto: 'Acción de tutela. Derecho de petición. Accionado: Ministerio de Ambiente y Desarrollo Sostenible',
-    cuerpo: 'Buen día. Presento acción de tutela por la vulneración del derecho fundamental de petición contra el Ministerio de Ambiente y Desarrollo Sostenible, para el reparto que corresponda. Adjunto el escrito de tutela firmado, copia de la petición radicada ante la entidad y la constancia de su envío. Agradezco confirmar el radicado y el juzgado de reparto a este mismo correo.',
-    botones: [['tutela', 'Formato en Word'], ['inst3', 'Instructivo (PDF)']],
   },
 ];
 
@@ -121,7 +95,7 @@ export default function SeccionAcciones() {
       <div className="grid md:grid-cols-[1fr,auto] gap-x-10 gap-y-4 md:items-end mb-10 md:mb-12">
         <Reveal>
           <span className="block font-display font-extrabold text-[clamp(38px,7vw,64px)] leading-none text-hoja/25 mb-1">02</span>
-          <Eyebrow sobre="Acciones jurídicas">Usted escribe. <b>El Estado responde.</b></Eyebrow>
+          <Eyebrow sobre="Derecho de petición">Usted firma. <b>El Estado responde.</b></Eyebrow>
         </Reveal>
         <Reveal as="p" className="text-[15px] text-[var(--texto-suave)] leading-relaxed md:text-right md:max-w-[42ch] md:justify-self-end">
           Descargue el formato, fírmelo y envíelo por correo. Desde que llega, corre un plazo legal de quince días hábiles.
