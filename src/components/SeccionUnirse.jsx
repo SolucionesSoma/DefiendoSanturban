@@ -71,9 +71,6 @@ export default function SeccionUnirse() {
                 </li>
               ))}
             </ul>
-            <a href={FORMULARIO_URL} target="_blank" rel="noopener" className="btn btn-amber btn-sm mt-8 w-full">
-              Abrir formulario aparte <Ico d={P.externo} className="w-4 h-4" />
-            </a>
           </div>
 
           <div className="bg-white p-3 sm:p-5 md:p-6">
@@ -83,7 +80,7 @@ export default function SeccionUnirse() {
                 <p className="text-[13px] text-[var(--texto-suave)] mt-0.5">Formulario oficial de la campaña #DefiendoSanturban.</p>
               </div>
               <a href={FORMULARIO_URL} target="_blank" rel="noopener" className="btn btn-ghost btn-sm text-bosque self-start sm:self-auto whitespace-nowrap">
-                Nueva pestaña ↗
+                Abrir formulario aparte ↗
               </a>
             </div>
             <div className="rounded-xl overflow-hidden border border-[var(--linea)] bg-[var(--pagina)]">

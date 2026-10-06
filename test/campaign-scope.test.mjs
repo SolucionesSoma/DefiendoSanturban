@@ -62,8 +62,9 @@ test('la inscripción usa Google Forms embebido y conserva salida externa', asyn
 
   assert.match(unirse, /<iframe/);
   assert.match(unirse, /viewform\?embedded=true/);
+  assert.equal((unirse.match(/href=\{FORMULARIO_URL\}/g) || []).length, 1);
   assert.match(unirse, /Abrir formulario aparte/);
-  assert.match(unirse, /Nueva pestaña/);
+  assert.doesNotMatch(unirse, /Nueva pestaña/);
   assert.doesNotMatch(unirse, /<form/);
   assert.doesNotMatch(unirse, /mailto:/);
 });
