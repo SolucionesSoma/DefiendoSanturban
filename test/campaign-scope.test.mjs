@@ -55,3 +55,15 @@ test('calendario usa fechas nuevas y numeración continua', async () => {
   assert.match(evidencia, />03<\/span>/);
   assert.match(fechas, />04<\/span>/);
 });
+
+
+test('la inscripción usa Google Forms embebido y conserva salida externa', async () => {
+  const unirse = await leer('src/components/SeccionUnirse.jsx');
+
+  assert.match(unirse, /<iframe/);
+  assert.match(unirse, /viewform\?embedded=true/);
+  assert.match(unirse, /Abrir formulario aparte/);
+  assert.match(unirse, /Nueva pestaña/);
+  assert.doesNotMatch(unirse, /<form/);
+  assert.doesNotMatch(unirse, /mailto:/);
+});

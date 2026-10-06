@@ -33,8 +33,8 @@ export default function Pie() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-white/12 text-[12.5px] leading-relaxed text-white/55 space-y-3">
-          <p>Esta página no guarda ni transmite datos personales: todo se procesa en su propio teléfono o computador. Los datos que usted envíe al inscribirse viajan de su correo al del Comité, y el Comité los trata conforme al régimen de habeas data de la Ley 1581 de 2012: solo para contactarlo y enviarle información sobre Santurbán, sin cederlos a terceros. Puede pedir su corrección o supresión en el mismo correo. Los formatos jurídicos son modelos; quien los firma es responsable de leerlos y de lo que radica.</p>
-          <p>Fotografías del páramo: colaboradores de <a href="https://commons.wikimedia.org/wiki/Category:P%C3%A1ramo_de_Santurb%C3%A1n" target="_blank" rel="noopener" className="text-agua-claro hover:underline">Wikimedia Commons</a> (CC BY-SA 3.0 / 4.0). El crédito de cada autor aparece sobre la imagen en la galería.</p>
+          <p>La inscripción se realiza mediante Google Forms. Las respuestas son recibidas por el Comité y se tratan conforme al régimen de habeas data de la Ley 1581 de 2012, únicamente para gestionar la campaña y contactar a sus participantes. Puede pedir su corrección o supresión en el correo del Comité. Los formatos jurídicos son modelos; quien los firma es responsable de leerlos y de lo que radica.</p>
+          <p>Fotografías del páramo: colaboradores de <a href="https://commons.wikimedia.org/wiki/Category:P%C3%A1ramo_de_Santurb%C3%A1n" target="_blank" rel="noopener" className="text-agua-claro hover:underline">Wikimedia Commons</a> (CC BY-SA 3.0 / 4.0).</p>
           <p className="pt-2">© {new Date().getFullYear()} Comité para la Defensa del Agua y el Páramo de Santurbán.</p>
         </div>
       </div>
